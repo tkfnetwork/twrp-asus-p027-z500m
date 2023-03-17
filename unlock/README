@@ -1,0 +1,37 @@
+Tool to Unlock Bootloader in ASUS ZenPad 10 3s Z500M (P027)
+by the guy known as diplomatic on XDA
+
+See https://forum.xda-developers.com/android/development/tool-unlock-bootloader-asus-zenpad-10-t3730909
+for up-to-date information and instructions
+
+DISCLAIMER
+This software is for educational purposes only. Anything you do that is
+described in this post is at your own risk. No one else is responsible
+for any data loss, corruption or damage of your device, including that
+which results from bugs in this software.
+
+REQUIREMENTS
+* A ZenPad Z500M tablet upgraded to Android N
+* A rooted/patched boot image such as one made by Magisk Manager
+* Temporary root with Magisk or other superuser manager installed
+* Knowledge of adb/fastboot and of basic Linux command shell
+
+INSTRUCTIONS
+1.  Read all of these instructions and make sure you understand them 
+    before starting
+2.  Install Magisk Manager and create an offline patched boot image from
+    the stock boot.img if you don't have one.
+3.  Do a fastboot boot patched_boot.img from your PC to start the rooted
+    image
+4.  Download the tool zip file to your tablet.
+5.  Extract the zip to your /data/local/tmp folder. (Other folders may
+    work as well.)
+6.  Open a root shell with adb shell, then run 'su'
+7.  Change your shell to that folder (cd /data/local/tmp)
+8.  Run this script to unlock or lock the BL
+    sh unlockbl.sh
+9.  Follow the instructions on the screen and type the requested
+    confirmation into the prompt.
+10. Check for completion or any error messages. Report them here.
+11. If no errors, you are unlocked and may modify your boot partition
+    (e.g. install root).
